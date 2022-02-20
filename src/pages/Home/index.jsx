@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from './styles';
 
 const Home =()=>( 
-<div>Hello World!!</div>
+<Container>Hello World!!</Container>
 );
 
 export default Home;
