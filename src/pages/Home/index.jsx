@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import Slider from "react-slick";
 import TextField, {Input} from '@material/react-text-field';
 import logo from '../../assets/logo.svg';
-import { Container, Search, Logo, Wrapper, Map, CarrousselTitle} from './styles';
+import { Container, Search, Logo, Wrapper, Map, Carroussel, CarrousselTitle} from './styles';
 import MaterialIcon from '@material/react-material-icon';
 import restaurante from '../../assets/restaurante-fake.png'
+import {Card} from '../../components'
 
 const Home =()=>{
 const [inputValue, setInputValue]= useState('');
@@ -30,23 +31,14 @@ return(
             </Input>
             </TextField>
             <CarrousselTitle>Na sua Área</CarrousselTitle>
-            <Slider {...settings}>
-                <div>
-                    <img src={restaurante}/>
-                </div>
-                <div>
-                    <img src={restaurante}/>
-                </div>
-                <div>
-                    <img src={restaurante}/>
-                </div>
-                <div>
-                    <img src={restaurante}/>
-                </div>
-                <div>
-                    <img src={restaurante}/>
-                </div>
-            </Slider>
+            <Carroussel {...settings}>
+                <Card photo={restaurante} title="Abrobinhas"/>
+                <Card photo={restaurante} title="Abrobinhas"/>
+                <Card photo={restaurante} title="Abrobinhas"/>
+                <Card photo={restaurante} title="Abrobinhas"/>
+                <Card photo={restaurante} title="Abrobinhas"/>
+                <Card photo={restaurante} title="Abrobinhas"/>   
+            </Carroussel>
         </Search> 
     </Container>
     <Map/>

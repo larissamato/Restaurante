@@ -1,4 +1,5 @@
 import styled from 'styled-components'; 
+import Slider from "react-slick";
 
 
 export const Wrapper=styled.div`
@@ -21,11 +22,18 @@ padding: 16px;
 `;
 
 export const Logo= styled.img`
-margin-bottom:15px`;
+margin-bottom:16px ;
+`;
 
 export const Map=styled.div`
 background-color: red ;
 width: 500px;
+`;
+
+export const Carroussel = styled(Slider)`
+.slick-slide{
+    margin-right:16px;
+}
 `;
 
 export const CarrousselTitle=styled.h1`
