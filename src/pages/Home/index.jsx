@@ -5,10 +5,12 @@ import logo from '../../assets/logo.svg';
 import { Container, Search, Logo, Wrapper, Map, Carroussel, CarrousselTitle} from './styles';
 import MaterialIcon from '@material/react-material-icon';
 import restaurante from '../../assets/restaurante-fake.png'
-import {Card , RestaurantCard} from '../../components'
+import {Card , RestaurantCard, Modal} from '../../components'
 
 const Home =()=>{
+
 const [inputValue, setInputValue]= useState('');
+const [modalOpened, setModalOpened]= useState(false);
 
 const  settings = {
     dots: false,
@@ -40,9 +42,10 @@ return(
                 <Card photo={restaurante} title="Abrobinhas"/>   
             </Carroussel>
         </Search> 
-        <RestaurantCard />
+            <RestaurantCard />
     </Container>
     <Map/>
+    <Modal open={modalOpened} onClose={()=> setModalOpened(!modalOpened)}/>
 </Wrapper>
     
     );

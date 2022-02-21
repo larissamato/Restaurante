@@ -26,7 +26,7 @@ margin-bottom:16px ;
 `;
 
 export const Map=styled.div`
-background-color: red ;
+background-color: #ffffff ;
 width: 500px;
 `;
 
