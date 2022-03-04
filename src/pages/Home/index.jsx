@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import Slider from "react-slick";
 import TextField, {Input} from '@material/react-text-field';
 import logo from '../../assets/logo.svg';
-import { Container, Search, Logo, Wrapper, Map, Carroussel, CarrousselTitle} from './styles';
+import { Container, Search, Logo, Wrapper, Carroussel, CarrousselTitle} from './styles';
 import MaterialIcon from '@material/react-material-icon';
 import restaurante from '../../assets/restaurante-fake.png'
-import {Card , RestaurantCard, Modal} from '../../components'
+import {Card , RestaurantCard, Modal, Map} from '../../components'
 
 const Home =()=>{
 
