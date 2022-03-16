@@ -28,11 +28,17 @@ export const MapContainer = (props) => {
 
 
 
-    return <Map google={google} centerAroundCurrentLocation onReady={onMapReady} onRecenter={onMapReady}/>;
-
+    return(
+    <Map 
+    google={google} 
+    centerAroundCurrentLocation 
+    onReady={onMapReady} 
+    onRecenter={onMapReady}
+    />
+  ); 
 };
 
 export default GoogleApiWrapper({
-    apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
-    language: 'pt-BR',
+  apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
+  language: 'pt-BR',
 })(MapContainer);
